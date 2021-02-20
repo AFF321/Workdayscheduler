@@ -72,3 +72,24 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.Present{
+  color: white;
+  background-color: grey;
+}
+.Past{
+  color: #ffffff;
+  background-color: red;
+}
+.future{
+  background-color: green;
+}
+
+.Present .btn{
+  color: white;
+  background-color: grey;
+}
+.Past .btn{
+  color: #ffffff;
+  background-color: red;
+}
