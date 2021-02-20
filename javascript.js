@@ -33,6 +33,18 @@ before10 = moment('10:00:00', format),
 after10 = moment('11:00:00', format);
 before11 = moment('11:00:00', format),
 after11 = moment('12:00:00', format);
+before12 = moment('12:00:00', format),
+after12 = moment('13:00:00', format);
+before13 = moment('13:00:00', format),
+after13 = moment('14:00:00', format);
+before14 = moment('14:00:00', format),
+after14 = moment('15:00:00', format);
+before15 = moment('15:00:00', format),
+after15 = moment('16:00:00', format);
+before16 = moment('16:00:00', format),
+after16 = moment('17:00:00', format);
+before17 = moment('17:00:00', format),
+after17 = moment('18:00:00', format);
 if (time.isBefore(before9)){
     console.log('hello')
     $('#hour-9').addClass('future')
@@ -60,14 +72,111 @@ if (time.isBetween(before10, after10)){
     
 } 
 if (time.isAfter(after10)){
-    console.log("ooooooooo")
     $('#hour-10').addClass('Past')
 }
 
+if (time.isBefore(before11)){
+    console.log('hello')
+    $('#hour-11').addClass('future')
+}
+if (time.isBetween(before11, after11)){
+    var div= $('#hour-11')
+    $('#hour-11').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after11)){
+    console.log("ooooooooo")
+    $('#hour-11').addClass('Past')
+}
 
 
+if (time.isBefore(before12)){
+    console.log('hello')
+    $('#hour-12').addClass('future')
+}
+if (time.isBetween(before12, after12)){
+    $('#hour-12').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after12)){
+    console.log("ooooooooo")
+    $('#hour-12').addClass('Past')
+}
 
 
+if (time.isBefore(before13)){
+    console.log('hello')
+    $('#hour-13').addClass('future')
+}
+if (time.isBetween(before13, after13)){
+    $('#hour-13').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after13)){
+    console.log("ooooooooo")
+    $('#hour-13').addClass('Past')
+}
+
+
+if (time.isBefore(before14)){
+    console.log('hello')
+    $('#hour-14').addClass('future')
+}
+if (time.isBetween(before14, after14)){
+    $('#hour-14').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after14)){
+    console.log("ooooooooo")
+    $('#hour-14').addClass('Past')
+}
+
+
+if (time.isBefore(before15)){
+    console.log('hello')
+    $('#hour-15').addClass('future')
+}
+if (time.isBetween(before15, after15)){
+    $('#hour-15').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after15)){
+    console.log("ooooooooo")
+    $('#hour-15').addClass('Past')
+}
+
+
+if (time.isBefore(before16)){
+    console.log('hello')
+    $('#hour-16').addClass('future')
+}
+if (time.isBetween(before16, after16)){
+    $('#hour-16').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after16)){
+    console.log("ooooooooo")
+    $('#hour-16').addClass('Past')
+}
+if (time.isBefore(before17)){
+    console.log('hello')
+    $('#hour-17').addClass('future')
+}
+if (time.isBetween(before17, after17)){
+    $('#hour-17').addClass('Present')
+    console.log("AAAAAAAAAAAAA")
+    
+} 
+if (time.isAfter(after17)){
+    console.log("ooooooooo")
+    $('#hour-17').addClass('Past')
+}
 var ninett = localStorage.getItem("h9")
 ninet.val(ninett)
 var tentt = localStorage.getItem("h10")
