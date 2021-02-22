@@ -27,6 +27,7 @@ var seventeen = $(".17")
 var seventeent =$(".17t")
 var format = 'hh:mm:ss'
 var time = moment(),format
+//b for button, t for text, and just the number is for the div block
 before9 = moment('9:00:00', format),
 after9 = moment('10:00:00', format);
 before10 = moment('10:00:00', format),
@@ -45,6 +46,9 @@ before16 = moment('16:00:00', format),
 after16 = moment('17:00:00', format);
 before17 = moment('17:00:00', format),
 after17 = moment('18:00:00', format);
+//setting the times for the time checks
+
+//all if statements determine current time and change the timeblocks to reflect it
 if (time.isBefore(before9)){
     console.log('hello')
     $('#hour-9').addClass('future')
@@ -195,7 +199,7 @@ var sixteentt = localStorage.getItem("h16")
 sixteent.val(sixteentt)
 var seventeentt = localStorage.getItem("h17")
 seventeent.val(seventeentt)
-
+//grabs all the text for the webpage that is saved
 
 function set9(){
     localStorage.setItem("h9", ninet.val())
@@ -233,9 +237,10 @@ function set17(){
     localStorage.setItem("h17", seventeent.val())
     console.log(seventeent.val())
 }
+//saves everything you place
 moment()
 console.log(moment())
-
+//on btn click it sets what has been inputed into the local storage
 btn1.on('click', set9)
 btn2.on('click', set10)
 btn3.on('click', set11)
@@ -245,4 +250,6 @@ btn6.on('click', set14)
 btn7.on('click', set15)
 btn8.on('click', set16)
 btn9.on('click', set17)
+
+//shows current day
 $("#currentDay").text(moment().format("dddd, MMMM Do"))
